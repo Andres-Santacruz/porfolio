@@ -1,0 +1,93 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Badge from '../components/Badge.astro';
+import SocialPill from '../components/SocialPill.astro';
+import LinkedInIcon from '../components/icons/LinkedIn.astro';
+import GitHubIcon from '../components/icons/GitHub.astro';
+import Container from '../components/Container.astro';
+import Experience from '../components/Experience.astro';
+import CurriculumVIcon from '../components/CurriculumV.astro';
+import BriefcaseIcon from '../components/icons/Briefcase.astro';
+import ProfileCheckIcon from '../components/icons/ProfileCheck.astro';
+import CodeIcon from '../components/icons/Code.astro';
+import Projects from '../components/Projects.astro';
+import AboutMe from '../components/AboutMe.astro';
+---
+
+<Layout title="Porfolio Andres Santacruz - Desarrollador JavaScript FullStack React.js Node.js" description='Desarrollador Web FullStack con más de 3 años de experiencia, especializado en React.js y Node.js'>
+	<main class="px-4">
+	<Container id='' class='py-16 md:py-36'>
+		<div class="flex items-center gap-x-6">
+
+			<img src="/andres.png" alt="andres photo"
+			class="rounded-full size-20 object-cover"
+			/>
+			<Badge>Disponible</Badge>
+		</div>
+			<h1 class="text-2xl md:text-4xl lg:text-5xl font-bold flex pb-4 items-center gap-x-4 dark:text-white">Andrés V Santacruz</h1>
+		<h2 class="text-2xl text-wrap dark:text-white"><span class="font-semibold">+4</span> años de experiencia. <span class="text-yellow-500/90 dark:text-yellow-400">Ingeniero Físico y Desarrollador Web FullStack.</span> <span class="opacity-70">De</span> <span class="text-red-300/90 dark:text-red-300">Popayán Colombia</span><span class="opacity-70">, especialista en </span><span class="text-blue-800/70 dark:text-blue-700">React.js</span><span class="opacity-70"> y </span><span class="text-green-700/80 dark:text-green-600">Node.js</span></h2>
+	
+		<ul class="flex gap-x-2 mt-5 flex-wrap">
+			<li>
+				<SocialPill href="https://www.linkedin.com/in/andres-santacruz-dev/">
+					<LinkedInIcon class="w-6 h-6" />
+					LinkedIn
+				</SocialPill>
+			</li>
+			<li>
+				<SocialPill href="https://github.com/Andres-Santacruz">
+					<GitHubIcon class="w-6 h-6" />
+					GitHub
+				</SociaPill>
+			</li>
+			<li>
+				<a
+					target="_blank"
+					rel="noopener noreferrer"
+					role="link"
+					href="/cv-andres-santacruz.pdf"
+					class="inline-flex items-center justify-center gap-2 px-4 py-1 text-white transition bg-gray-800 border border-gray-300 rounded-full dark:bg-gray-100 dark:border-gray-600 dark:text-gray-800 focus-visible:ring-yellow-500/80 text-md hover:bg-gray-100 hover:border-gray-700 group max-w-fit hover:text-gray-900 focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black hover:scale-105"
+				>
+					<CurriculumVIcon class="w-6 h-6" />
+					Descargar CV
+				</a>
+			</li>
+		</ul>
+	</Container>
+
+	<div class="space-y-24">
+    <Container id="experiencia" class=''>
+      <h2
+        class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
+      >
+        <BriefcaseIcon class="size-8" />
+        Experiencia laboral
+      </h2>
+      <Experience />
+    </Container>
+
+		<Container class='' id="proyectos">
+      <h2
+        class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
+      >
+        <CodeIcon class="size-7" />
+        Proyectos
+      </h2>
+      <Projects />
+    </Container>
+
+		<Container class='' id="sobre-mi">
+      <h2
+        class="flex items-center mb-6 text-3xl font-semibold gap-x-8 text-black/80 dark:text-white"
+      >
+        <ProfileCheckIcon class="size-8" />
+        Sobre mí
+      </h2>
+      <AboutMe />
+    </Container>
+
+		</div>
+
+	</main>
+</Layout>
+

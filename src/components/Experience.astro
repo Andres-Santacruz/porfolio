@@ -1,0 +1,38 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Junio 2021 - Actualmente...",
+    title: "Desarrollador Front-End React",
+    company: "Namtrik Development",
+    description:
+      "Como líder del desarrollo frontend, me especializo en crear aplicaciones web personalizadas, optimizando la experiencia del usuario y colaborando con equipos de diseño y backend para ofrecer soluciones intuitivas y eficientes que superen las expectativas de los clientes.",
+    link: "https://www.namtrikdev.co/",
+  },
+  {
+    date: "Junio 2020 - Junio 2021",
+    title: "Desarrollador Freelance",
+    company: "",
+    description:
+      "Como desarrollador freelance, creé interfaces de usuario y páginas web para pequeñas empresas, mejorando su experiencia y facilitando la gestión de sus negocios.",
+  },
+  {
+    date: "Enero 2018 - Junio 2020",
+    title: "Profesor de Tecnología",
+    company: "CPCC",
+    description:
+      "Como profesor, enseñé programación a niños de 11 a 16 años de edad, incluyendo Arduino y desarrollo web con HTML y CSS, brindándoles el conocimiento necesario para comprender el funcionamiento de Internet.",
+    link: "https://pedagogicocreativodelcauca.aule.co/app/pages/WZIXXFKjnjqT_OT/index.html",
+  },
+]
+---
+
+<ol class="relative ml-3 md:ml-4 border-s border-gray-200 dark:border-gray-700 mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="mb-10 ms-6">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
